@@ -40,6 +40,13 @@ export const Banner = () => {
         }
     }
 
+    const scrollDown = () => {
+        const skillsSection = document.getElementById('skills');
+        if (skillsSection) {
+          skillsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
     return (
         <section className="banner" id="home">
             <Container>
@@ -47,7 +54,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <h1 className="tagline">Mirte Theunis</h1>
                         <p></p><span className="wrap">{text}<span style={{ visibility: "hidden" }}>{toRotate[loopNum % toRotate.length]}</span></span><p></p>
-                        <button className="ontdekmeer" onClick={() => console.log('connect')}><span>Ontdek meer <img src={arrowIcon} alt="arrow" className="arrow" /></span></button>   
+                        <button className="ontdekmeer" onClick={scrollDown}><span>Ontdek meer <img src={arrowIcon} alt="arrow" className="arrow" /></span></button>   
                     </Col>
                     <Col xs={12} md={6} xl={5} className="img-container">
                     <img src={portret} alt="Cartoon portret" className="img-portret"/>
