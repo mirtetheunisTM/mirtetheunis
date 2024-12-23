@@ -7,8 +7,9 @@ export const AboutMe = () => {
             <Row className="intro-section mb-5">
               <Col xs={6} md={12}>
                 <h2 className="section-title text-center">Over Mij</h2>
-                <p>
-                  Hallo! Mijn naam is [Jouw Naam] en ik ben een gedreven webontwikkelaar met een passie voor UI/UX design. Ik heb ervaring in het ontwikkelen van websites en applicaties die zowel functioneel als esthetisch aantrekkelijk zijn. Mijn doel is om gebruiksvriendelijke digitale ervaringen te creëren die de interactie van gebruikers verbeteren.
+                <p className="align-items-center">
+                Hallo, ik ben Mirte Theunis! Mijn reis begon met een informaticaopleiding, waar ik de basisprincipes van technologie en programmeren heb geleerd. Maar al snel ontdekte ik mijn passie voor design. De manier waarop vorm en functie samenkomen om iets moois en bruikbaars te creëren, fascineerde me enorm. Daarom besloot ik mijn kennis verder uit te breiden en me te verdiepen in het ontwerp van digitale ervaringen.
+                Naast mijn opleiding, ben ik ook een gepassioneerde danser en houd ik ervan om creatief bezig te zijn in mijn vrije tijd. Of het nu gaat om dansen, ontwerpen of het ontwikkelen van nieuwe projecten, ik ben altijd op zoek naar manieren om mijn creativiteit en technische vaardigheden te combineren.
                 </p>
               </Col>
             </Row>

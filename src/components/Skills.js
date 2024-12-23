@@ -1,4 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom"; 
+import { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import metric1 from "../assets/img/metrix-uidesign.svg";
@@ -10,6 +12,11 @@ import arrowLeft from "../assets/img/chevron-left.svg";
 import arrowRight from "../assets/img/chevron-right.svg";
 
 export const Skills = () => {
+  const [activeLink, setActiveLink] = useState('home');
+  const updateActiveLink = (value) => {
+    setActiveLink(value);
+  }
+
     const responsive = {
         superLargeDesktop: {
           breakpoint: { max: 4000, min: 3000 },
@@ -29,6 +36,8 @@ export const Skills = () => {
         }
       };
 
+      const navigate = useNavigate();
+
       const customLeftArrow = (
         <button className="carousel-arrow carousel-arrow-left">
           <img src={arrowLeft} alt="Left Arrow" />
@@ -40,6 +49,11 @@ export const Skills = () => {
           <img src={arrowRight} alt="Right Arrow" />
         </button>
       );
+
+      const goToPage = () => {
+        navigate("/aboutme");
+        updateActiveLink("overmij");
+      };
 
       return (
         <section className="skill" id="skills">
@@ -75,7 +89,7 @@ export const Skills = () => {
                                 <h5>Brand Identity</h5>
                             </div>
                             </Carousel>
-                            <button className="learnMore" onClick={() => console.log("learn more")}><span>Leer meer over mij<img src={arrowIcon} alt="arrow" className="arrow" /></span></button>
+                            <button className="learnMore" onClick={goToPage}><span>Leer meer over mij<img src={arrowIcon} alt="arrow" className="arrow" /></span></button>
                     </div>
                     </Col>
                 </Row>

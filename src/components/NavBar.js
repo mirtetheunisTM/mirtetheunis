@@ -34,6 +34,7 @@ export const NavBar = () => {
                 contactSection.scrollIntoView({ behavior: 'smooth' });
               }
             }, 100);
+            updateActiveLink('home');
           };
 
     return (

@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projectFitanza from "../assets/img/project-fitanza.png";
+import projectGSF from "../assets/img/design-posters.png";
 import arrowIcon from "../assets/img/iconmonstr-arrow-right-circle-thin.svg";
 
 export const Projects = () => {
@@ -11,9 +12,9 @@ export const Projects = () => {
             imgURL: projectFitanza,
         },
         {
-            title: 'Project 2',
-            description: 'Description of project 2',
-            imgURL: 'https://via.placeholder.com/150',
+            title: 'Affiche en flyers dansshow',
+            description: 'Ontwerpen van posters, flyers en programmaboekjes voor een dansshow.',
+            imgURL: projectGSF,
         },
         {
             title: 'Project 3',
