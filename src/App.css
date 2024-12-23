@@ -250,6 +250,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -60px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 .skill h2 {
 	font-size: 45px;
@@ -444,7 +445,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
   padding: 10px 20px;
   font-size: 20px;
-  margin: 60px 15px -15px auto;
+  margin: 60px 5px -15px auto;
   position: relative;
   background: transparent;
   transition: 0.3s ease-in-out;
@@ -654,20 +655,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 1.2px;
 }
 
-.over-mij p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #FFFEFA;
-  text-align: justify;
-  margin: 0 auto;
-  width: 70%;
-  animation: fadeInUp 0.6s ease-in-out;
-}
-
 .over-mij .content-box {
   background: rgba(37, 37, 37, 0.8);
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 64px;
+  margin-bottom: 60px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
@@ -675,22 +667,57 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .over-mij ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  font-size: 18px;
-  line-height: 2;
+  margin: 15px auto 15px 30px;
 }
 
-.over-mij ul li {
-  padding: 10px 0;
-  color: #FFFEFA;
-  position: relative;
-}
-
-.over-mij ul li::before {
-  content: "•";
-  color: #93b3cf;
+.over-mij .education-list h4 {
   font-size: 20px;
-  margin-right: 10px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #FFFEFA; 
+  text-align: right;
+}
+
+.over-mij .work-experience-list h4  {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #FFFEFA; 
+  border-bottom: 2px solid #93b3cf;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.over-mij .work-experience-list h5 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.over-mij .education-list p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.over-mij .work-experience-list p {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+.over-mij .education-list li,
+.over-mij .work-experience-list li {
+  margin-bottom: 20px; 
+}
+
+.over-mij .vertical-line {
+  width: 2px;
+  height: 30px;
+  background-color: #93b3cf;
+  margin-left: 45%;
 }
 
 .skills-list li {
@@ -708,6 +735,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skills-list li:hover {
   background: #93b3cf;
   color: #373737;
+}
+
+.skills-list li span {
+  font-weight: 200;
+  letter-spacing: 0.8px;
 }
 
 @keyframes fadeInUp {
@@ -731,6 +763,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .content-box ul {
   animation: fadeInUp 0.8s ease-in-out;
-}
-
+} 
 
