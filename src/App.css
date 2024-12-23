@@ -764,7 +764,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: fadeInUp 0.8s ease-in-out;
 } 
 
-/* General Title and Description Styles */
+/* project page */
+
 .projectsPage {
   padding: 200px 0;
 }
@@ -814,19 +815,59 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     text-align: center;
 }
 
+/* detail page project*/ 
 
-
-/* Project Detail Page */
-.project-detail-img {
-  width: 100%;
-  border-radius: 20px;
-  margin-bottom: 20px;
+.project-detail {
+  padding: 200px 0;
 }
 
-.project-description {
+.project-detail .section-title {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 30px;
+}
+
+.project-detail .section-title::after {
+  content: "";
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 80px;
+  height: 2px;
+  background: #93b3cf;
+}
+
+
+.project-detail .section-description {
   font-size: 18px;
-  line-height: 1.8;
-  color: #FFFEFA;
-  text-align: justify;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process-title {
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+  border-bottom: 2px solid #93b3cf;
+  padding-bottom: 5px;
+}
+
+.process-step {
+  font-size: 18px;
+  line-height: 1.8em;
+  margin-bottom: 10px;
+}
+
+.project-image img {
+  margin-top: 80px;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
