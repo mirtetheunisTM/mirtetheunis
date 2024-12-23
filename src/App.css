@@ -260,9 +260,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-slider {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   position: relative;
+  overflow: visible;
 }
 
 .skill-slider .item h5 {
@@ -323,6 +324,35 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+.carousel-arrow {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.carousel-arrow img {
+  width: 40px;
+  filter: invert(100%) sepia(0%) saturate(750%) hue-rotate(200deg) brightness(110%) contrast(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.carousel-arrow:hover img {
+  transform: scale(1.2);
+  filter: invert(70%) sepia(30%) saturate(1000%) hue-rotate(90deg) brightness(120%) contrast(110%);
+}
+
+.carousel-arrow-left {
+  left: -30px; 
+}
+
+.carousel-arrow-right {
+  right: -30px; 
 }
 
 /* projects */
@@ -483,7 +513,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact {
   padding: 80px 0;
-  margin-bottom: 50px;
   color: #FFFEFA;
 }
 
@@ -557,4 +586,53 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact .danger {
   color: #FF4F5A;
+}
+
+/* footer */
+
+.footer {
+  background-color: #333; 
+  padding: 30px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer .align-items-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFFEFA;
+  letter-spacing: 0.8px;
+  margin: 10px 0 0 -32%; 
+  text-align: left;
+}
+
+.footer .social-icon {
+  text-align: left;
+}
+
+.footer .social-icon a {
+  display: inline-block;
+  margin: 0 8px; 
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer .social-icon a img {
+  width: 30px;
+  filter: invert(100%) sepia(41%) saturate(824%) hue-rotate(3deg) brightness(122%) contrast(102%);
+}
+
+.footer .social-icon a:hover img {
+  transform: scale(1.2); 
+  filter: invert(60%) sepia(85%) saturate(300%) hue-rotate(180deg) brightness(100%) contrast(90%);
+}
+
+.footer .align-items-center {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
 }

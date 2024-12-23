@@ -6,6 +6,8 @@ import metric2 from "../assets/img/metrix-development.svg";
 import metric3 from "../assets/img/metrix-ux.svg";
 import metric4 from "../assets/img/metrix-design.svg";
 import arrowIcon from "../assets/img/iconmonstr-arrow-right-circle-thin.svg"
+import arrowLeft from "../assets/img/chevron-left.svg";
+import arrowRight from "../assets/img/chevron-right.svg";
 
 export const Skills = () => {
     const responsive = {
@@ -27,6 +29,18 @@ export const Skills = () => {
         }
       };
 
+      const customLeftArrow = (
+        <button className="carousel-arrow carousel-arrow-left">
+          <img src={arrowLeft} alt="Left Arrow" />
+        </button>
+      );
+    
+      const customRightArrow = (
+        <button className="carousel-arrow carousel-arrow-right">
+          <img src={arrowRight} alt="Right Arrow" />
+        </button>
+      );
+
       return (
         <section className="skill" id="skills">
             <Container>
@@ -35,7 +49,7 @@ export const Skills = () => {
                     <div className="skill-bx">
                         <h2>Skills</h2>
                         <p></p> 
-                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                        <Carousel responsive={responsive} infinite={true} arrows={true} customLeftArrow={customLeftArrow} customRightArrow={customRightArrow} className="skill-slider">
                             <div className="item">
                                 <img src={metric1} alt="html" /> 
                                 <h5>UI Design</h5>
