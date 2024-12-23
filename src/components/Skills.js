@@ -12,11 +12,6 @@ import arrowLeft from "../assets/img/chevron-left.svg";
 import arrowRight from "../assets/img/chevron-right.svg";
 
 export const Skills = () => {
-  const [activeLink, setActiveLink] = useState('home');
-  const updateActiveLink = (value) => {
-    setActiveLink(value);
-  }
-
     const responsive = {
         superLargeDesktop: {
           breakpoint: { max: 4000, min: 3000 },
@@ -38,21 +33,8 @@ export const Skills = () => {
 
       const navigate = useNavigate();
 
-      /* const customLeftArrow = (
-        <button className="carousel-arrow carousel-arrow-left">
-          <img src={arrowLeft} alt="Left Arrow" />
-        </button>
-      );
-    
-      const customRightArrow = (
-        <button className="carousel-arrow carousel-arrow-right">
-          <img src={arrowRight} alt="Right Arrow" />
-        </button>
-      ); */
-
       const goToPage = () => {
         navigate("/aboutme");
-        updateActiveLink("overmij");
       };
 
       return (
@@ -62,7 +44,7 @@ export const Skills = () => {
                     <Col>
                     <div className="skill-bx">
                         <h2>Skills</h2>
-                        <Carousel responsive={responsive} infinite={true} arrows={true} /*customLeftArrow={customLeftArrow} customRightArrow={customRightArrow}*/ className="skill-slider">
+                        <Carousel responsive={responsive} infinite={true} arrows={true} className="skill-slider">
                             <div className="item">
                                 <img src={metric1} alt="html" /> 
                                 <h5>UI Design</h5>

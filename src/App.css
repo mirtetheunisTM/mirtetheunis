@@ -753,7 +753,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-/* Animations */
 .intro-section h2,
 .education-section h3,
 .work-experience-section h3,
@@ -764,4 +763,70 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .content-box ul {
   animation: fadeInUp 0.8s ease-in-out;
 } 
+
+/* General Title and Description Styles */
+.projectsPage {
+  padding: 200px 0;
+}
+
+.projectsPage .section-title {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 30px;
+}
+
+.projectsPage .section-title::after {
+  content: "";
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 80px;
+  height: 2px;
+  background: #93b3cf;
+}
+
+.projectsPage .intro-text {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 85%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.projectsPage .projecten-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.projectsPage .projecten-wrapper .proj-imgbx {
+    position: relative;
+    border-radius: 64px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    width: 300%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* Project Detail Page */
+.project-detail-img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #FFFEFA;
+  text-align: justify;
+}
 
