@@ -8,8 +8,6 @@ import metric2 from "../assets/img/metrix-development.svg";
 import metric3 from "../assets/img/metrix-ux.svg";
 import metric4 from "../assets/img/metrix-design.svg";
 import arrowIcon from "../assets/img/iconmonstr-arrow-right-circle-thin.svg"
-import arrowLeft from "../assets/img/chevron-left.svg";
-import arrowRight from "../assets/img/chevron-right.svg";
 
 export const Skills = () => {
     const responsive = {

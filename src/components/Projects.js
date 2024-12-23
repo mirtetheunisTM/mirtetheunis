@@ -12,7 +12,7 @@ export const Projects = () => {
             imgURL: projectFitanza,
         },
         {
-            title: 'Affiche en flyers dansshow',
+            title: 'Marketing dansshow',
             description: 'Ontwerpen van posters, flyers en programmaboekjes voor een dansshow.',
             imgURL: projectGSF,
         },
