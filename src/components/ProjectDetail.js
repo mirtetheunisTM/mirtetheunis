@@ -6,6 +6,10 @@ import projectFitanza3 from "../assets/img/project-fitanza3.png";
 import projectGSF from "../assets/img/design-posters.png";
 import projectGSF2 from "../assets/img/design-posters2.png";
 import projectGSF3 from "../assets/img/design-programmaboekje.png";
+import projectKasteel from "../assets/img/website-kasteel.png";
+import projectKasteel2 from "../assets/img/projectKasteel.png";
+import projectKasteel3 from "../assets/img/projectKasteel2.png";
+import projectKasteel4 from "../assets/img/projectKasteel3.png";
 
 export const ProjectDetail = () => {
     const { id } = useParams(); 
@@ -53,18 +57,19 @@ export const ProjectDetail = () => {
             ]        },
         {
             id: 3,
-            title: "Project 3",
-            description: "Description of project 3",
-            imgURL: "https://via.placeholder.com/150",
+            title: "Website Château de L'Ardoisière",
+            description: 'Een statische website voor een klant.',
+            imgURL: projectKasteel,
             process: [
-                "Het project begon met het onderzoeken van de doelgroep en het maken van wireframes.",
-                "Vervolgens werden er prototypes gemaakt en getest met gebruikers.",
-                "De uiteindelijke applicatie is ontwikkeld in React Native en omvat features zoals challenges, statistieken en een sociale feed."
+                "In mijn eerste jaar Toegepaste Informatica heb ik voor het vak Webontwikkeling 1 een statische website ontwikkeld. Het doel van dit project was om de basisprincipes van HTML en CSS onder de knie te krijgen en toe te passen in een praktijkgerichte opdracht.",
+                "De website werd ontworpen voor een klant en opgebouwd in verschillende fasen, waarbij ik telkens nieuwe vaardigheden en technieken integreerde naarmate de cursus vorderde. Aanvankelijk richtte ik me op eenvoudige HTML-structuren om een solide basis te leggen. Vervolgens implementeerde ik CSS-styling om de lay-out en visuele presentatie van de website te verbeteren.",
+                "Gedurende het project leerde ik geavanceerdere concepten, zoals het werken met semantische HTML, het toepassen van responsive design, en het creëren van een functionele interface. Deze iteratieve aanpak zorgde ervoor dat de website niet alleen functioneel, maar ook esthetisch aantrekkelijk werd, ondanks het gebruik van uitsluitend HTML en CSS.",
+                "Dit project bood een waardevolle eerste ervaring in webontwikkeling en legde de basis voor meer complexe projecten in mijn latere studies."
             ],
             images: [
-                "https://via.placeholder.com/300x200",
-                "https://via.placeholder.com/300x200",
-                "https://via.placeholder.com/300x200"
+                projectKasteel2,
+                projectKasteel3,
+                projectKasteel4
             ]
         },
     ];

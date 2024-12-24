@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import { useNavigate } from "react-router-dom"; 
 import projectFitanza from "../assets/img/project-fitanza.png";
 import projectGSF from "../assets/img/design-posters.png";
+import projectKasteel from "../assets/img/website-kasteel.png";
 import arrowIcon from "../assets/img/iconmonstr-arrow-right-circle-thin.svg";
 
 export const Projects = () => {
@@ -24,9 +25,9 @@ export const Projects = () => {
             imgURL: projectGSF,
         },
         {
-            title: 'Project 3',
-            description: 'Description of project 3',
-            imgURL: 'https://via.placeholder.com/150',
+            title: "Website Château de L'Ardoisière",
+            description: 'Een statische website voor een klant.',
+            imgURL: projectKasteel,
         }
     ];
 

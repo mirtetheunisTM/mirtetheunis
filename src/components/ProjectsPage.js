@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import { useNavigate } from "react-router-dom";
 import projectFitanza from "../assets/img/project-fitanza.png";
 import projectGSF from "../assets/img/design-posters.png";
+import projectKasteel from "../assets/img/website-kasteel.png";
 
 export const ProjectsPage = () => {
     const navigate = useNavigate(); 
@@ -22,33 +23,9 @@ export const ProjectsPage = () => {
         },
         {
             id: 3,
-            title: "Project 3",
-            description: "Description of project 3",
-            imgURL: "https://via.placeholder.com/150",
-        },
-        {
-            id: 4,
-            title: "Project 4",
-            description: "Description of project 4",
-            imgURL: "https://via.placeholder.com/150",
-        },
-        {
-            id: 5,
-            title: "Project 5",
-            description: "Description of project 5",
-            imgURL: "https://via.placeholder.com/150",
-        },
-        {
-            id: 6,
-            title: "Project 6",
-            description: "Description of project 6",
-            imgURL: "https://via.placeholder.com/150",
-        },
-        {
-            id: 7,
-            title: "Project 7",
-            description: "Description of project 7",
-            imgURL: "https://via.placeholder.com/150",
+            title: "Website Château de L'Ardoisière",
+            description: 'Een statische website voor een klant.',
+            imgURL: projectKasteel,
         },
     ];
 
