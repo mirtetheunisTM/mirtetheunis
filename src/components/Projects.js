@@ -1,10 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { useNavigate } from "react-router-dom"; 
 import projectFitanza from "../assets/img/project-fitanza.png";
 import projectGSF from "../assets/img/design-posters.png";
 import arrowIcon from "../assets/img/iconmonstr-arrow-right-circle-thin.svg";
 
 export const Projects = () => {
+    const navigate = useNavigate();
+
+    const goToPage = () => {
+        navigate("/projects");
+    };
+
     const projects = [
         {
             title: 'Fitanza',
@@ -41,7 +48,7 @@ export const Projects = () => {
                                     )
                                 })}
                             </Row>
-                            <button className="btn-primary" onClick={() => console.log('connect')}><span>Ontdek alle projecten<img src={arrowIcon} alt="arrow" className="arrow" /></span></button>
+                            <button className="btn-primary" onClick={goToPage}><span>Ontdek alle projecten<img src={arrowIcon} alt="arrow" className="arrow" /></span></button>
                         </div>
                     </Col>
                 </Row>
