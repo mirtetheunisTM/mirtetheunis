@@ -5,6 +5,8 @@ import projectFitanza from "../assets/img/project-fitanza.png";
 import projectGSF from "../assets/img/design-posters.png";
 import projectKasteel from "../assets/img/website-kasteel.png";
 import arrowIcon from "../assets/img/iconmonstr-arrow-right-circle-thin.svg";
+import projectAI from "../assets/img/ai-1.jpg";
+import projectBsit from "../assets/img/bsit1.png";
 
 export const Projects = () => {
     const navigate = useNavigate();
@@ -20,14 +22,14 @@ export const Projects = () => {
             imgURL: projectFitanza,
         },
         {
-            title: 'Marketing dansshow',
-            description: 'Ontwerpen van posters, flyers en programmaboekjes voor een dansshow.',
-            imgURL: projectGSF,
+            title: 'Rebranding BSIT',
+            description: 'Een brand guide voor het nieuwe uiterlijk van Bsit.',
+            imgURL: projectBsit,
         },
         {
-            title: "Website Château de L'Ardoisière",
-            description: 'Een statische website voor een klant.',
-            imgURL: projectKasteel,
+            title: "Smart Energy Use AI",
+            description: 'Een AI systeem dat je aanbelevingen geeft op basis van je energieverbruik.',
+            imgURL: projectAI,
         }
     ];
 
