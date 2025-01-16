@@ -19,6 +19,15 @@ import projectAI3 from "../assets/img/ai-3.png";
 import projectGSF4 from "../assets/img/gsf1.png";
 import projectGSF5 from "../assets/img/gsf2.png";
 import projectGSF6 from "../assets/img/gsf3.png";
+import projectBsit from "../assets/img/bsit1.png";
+import projectBsit2 from "../assets/img/bsit2.png";
+import projectBsit3 from "../assets/img/bsit3.png";
+import projectOV from "../assets/img/ov1.png";
+import projectOV2 from "../assets/img/ov2.png";
+import projectOV3 from "../assets/img/ov3.png";
+import project3D from "../assets/img/3d1.png";
+import project3D2 from "../assets/img/3d2.png";
+import project3D3 from "../assets/img/3d3.jpg";
 
 export const ProjectDetail = () => {
     const { id } = useParams(); 
@@ -48,16 +57,16 @@ export const ProjectDetail = () => {
             id: 2,
             title: "Rebranding BSIT",
             description: "Een brand guide voor het nieuwe uiterlijk van Bsit.",
-            imgURL: projectFitanza,
+            imgURL: projectBsit,
             process: [
                 "Voor het rebrandingproject van BSIT deed ik diepgaand onderzoek naar de identiteit van BSIT. Ik analyseerde waar de organisatie voor staat, wat hun doelen en waarden zijn, en hoe deze momenteel worden gecommuniceerd. Daarnaast bestudeerde ik de branding van concurrenten om een vergelijking te maken en te bepalen waar BSIT zich kan onderscheiden en verbeteren.",
                 "Op basis van deze inzichten begon ik met het herontwerpen van het logo, waarbij ik streefde naar een visuele identiteit die de kernwaarden en missie van BSIT weerspiegelt. Vervolgens selecteerde ik een kleurenpalet en een typografie die het juiste karakter en de gewenste uitstraling benadrukken.",
                 "Daarna stelde ik een brand brief op waarin de vernieuwde merkidentiteit werd samengevat, gevolgd door het creëren van een uitgebreide brand guide. Deze brand guide bevatte alle nodige informatie over de branding en liet zien hoe deze toegepast kan worden op verschillende archetypes. Het resultaat was een consistente, professionele en moderne visuele identiteit voor BSIT.",
             ],
             images: [
-                projectFitanza,
-                projectFitanza2,
-                projectFitanza3
+                projectBsit,
+                projectBsit2,
+                projectBsit3
             ]
         },
         {
@@ -117,31 +126,31 @@ export const ProjectDetail = () => {
             id: 6,
             title: "Openbaar vervoer app",
             description: "Een geïntegreerde en toegangelijke app voor het openbaar vervoer.",
-            imgURL: projectFitanza,
+            imgURL: projectOV,
             process: [
                 "Voor het vak User-Centered Design kreeg ik de opdracht om een app te ontwikkelen die verschillende soorten openbaar vervoer combineert en toegankelijk maakt voor een breed publiek.",
                 "Ik begon met het toepassen van diverse UX-methodologieën, zoals desk research, field studies, user interviews, het formuleren van user need statements en het opstellen van customer journeys. Door deze processen door te lopen, kon ik de behoeften en verwachtingen van gebruikers nauwkeurig identificeren.",
                 "Met deze inzichten werkte ik concrete ideeën uit, die ik vervolgens omzette in een prototype. Het resultaat was een app-concept dat gebruikers een centrale plaats biedt om onder andere hun routes te plannen en tickets te kopen, met een focus op toegankelijkheid en gebruiksvriendelijkheid."
             ],
             images: [
-                projectFitanza,
-                projectFitanza2,
-                projectFitanza3
+                projectOV,
+                projectOV2,
+                projectOV3
             ]
         },
         {
             id: 7,
             title: "3D design",
             description: "Enkele kleine projectjes in Render.",
-            imgURL: projectFitanza,
+            imgURL: project3D,
             process: [
                 "Tijdens het jaar maakte ik verschillende kleine 3D-projecten om de software Render onder de knie te krijgen. Deze projecten omvatten onder andere het ontwerpen van een karakter, het animeren van een blokje en het creëren van een gedetailleerde koffiekop.",
                 "Deze oefeningen gaven me inzicht in de mogelijkheden van 3D-ontwerp en bereidden me voor op mijn eindopdracht: een 3D-model van een foodtruck. Met deze opdrachten ontwikkelde ik mijn vaardigheden in 3D-design en leerde ik creatieve ideeën omzetten in visueel aantrekkelijke ontwerpen."
             ],
             images: [
-                projectFitanza,
-                projectFitanza2,
-                projectFitanza3
+                project3D,
+                project3D2,
+                project3D3
             ]
         },
         {
