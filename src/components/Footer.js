@@ -8,10 +8,10 @@ export const Footer = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col sm={6} className="social-icon">
-                        <a href="https://www.facebook.com/">
+                        <a href="https://www.facebook.com/mirte.theunis01/" target="_blank" rel="noopener noreferrer">
                             <img src={facebookIcon} alt="Facebook" />
                         </a>
-                        <a href="https://www.linkedin.com/">
+                        <a href="https://www.linkedin.com/in/mirte-theunis-587792200?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
                             <img src={linkedinIcon} alt="LinkedIn" />
                         </a>
                     </Col>
